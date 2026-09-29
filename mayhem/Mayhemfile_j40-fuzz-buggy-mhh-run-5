@@ -1,0 +1,10 @@
+# origin: https://app.mayhem.security/mayhemheroes/j40/j40-fuzz/5
+project: savantenvs/j40
+target: j40-fuzz-buggy-mhh-run-5
+
+cmds:
+  - cmd: /mayhem/j40-fuzz
+    libfuzzer: true
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
