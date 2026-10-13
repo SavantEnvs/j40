@@ -1,0 +1,11 @@
+# seed-from: https://app.mayhem.security/savantenvs/j40/j40-fuzz
+project: savantenvs/j40
+target: j40-fuzz-mined-a2a1294
+
+cmds:
+  - cmd: /mayhem/j40-fuzz
+    libfuzzer: true
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/j40-fuzz-mined-a2a1294/testsuite
